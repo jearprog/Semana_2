@@ -1,0 +1,16 @@
+<h2>Usuarios de Aplicación - Rest Api</h2>
+
+<div class="card-group">
+  <div *ngFor="let user of userList">
+    <div class="card mt-5 ms-5" style="width: 18rem">
+      <img [src]="user.avatar" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ user.email }}</h5>
+        <p class="card-text">
+          {{ user.first_name }}
+          {{ user.last_name }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
